@@ -12,6 +12,7 @@ body{
   background-image: url(./Components/sunset.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
   /* background-position: center; */
 }
 .main{
