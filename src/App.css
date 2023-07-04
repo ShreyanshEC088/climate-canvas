@@ -6,26 +6,42 @@
   height: 40vmin;
   pointer-events: none;
 }
-body{
-  margin:0;
-  padding:0;
+
+body {
+  margin: 0;
+  padding: 0;
   background-image: url(./Components/sunset.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  
   /* background-position: center; */
 }
-.main{
-  height:auto;
-  width:auto;
+
+@media (max-width: 767px) {
+  body {
+    height:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+}
+
+.main {
+  height: auto;
+  width: auto;
   background-color: rgba(37, 38, 48, 0.621);
   border-radius: 10px;
-  color:white;
-  margin:40px;
+  color: white;
+  margin: 40px;
 }
-.first{
- padding:20px;
+
+.first {
+  padding: 20px;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -51,6 +67,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
