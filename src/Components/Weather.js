@@ -36,11 +36,11 @@ export default class Weather extends Component {
     const { articles, loading } = this.state;
 
     return (
-      <div className="container">
+      <div className="container ">
         <h1 className="text-center" style={{ margin: "30px", color: "black" }}></h1>
         <div className="container">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control opacity-75" onChange={this.handleInputChange} placeholder="Enter City.." aria-label="Recipient's username" aria-describedby="button-addon2" />
+          <div class="input-group mb-3" style={{paddingLeft:"5vw",paddingRight:"5vw"}}>
+            <input type="text" class="form-control opacity-75"  onChange={this.handleInputChange} placeholder="Enter City.." aria-label="Recipient's username" aria-describedby="button-addon2" />
             <button class="btn btn-dark" onClick={this.handleSubmit} type="button" id="button-addon2">Search</button>
           </div>
         </div>
